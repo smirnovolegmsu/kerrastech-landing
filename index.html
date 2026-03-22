@@ -213,6 +213,25 @@
     .step h4 { font-weight: 700; margin-bottom: 0.35rem; }
     .step p { font-size: 0.875rem; color: var(--muted); }
 
+    /* CASE STUDY */
+    .case-study {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 700px) { .case-study { grid-template-columns: 1fr; } }
+    .case-col h4 { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
+    .case-col p { font-size: 0.9rem; color: var(--text); line-height: 1.6; }
+    .case-result { font-size: 1.5rem; font-weight: 800; color: var(--green); margin-bottom: 0.25rem; }
+    .case-result-label { font-size: 0.8rem; color: var(--muted); }
+    .case-header { margin-bottom: 2rem; }
+    .case-header h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .case-header p { font-size: 0.875rem; color: var(--muted); }
+
     /* CTA */
     .cta-block {
       background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(139,92,246,0.08));
@@ -275,7 +294,7 @@
       <div class="card-icon">🔍</div>
       <h3>BI Audit</h3>
       <p class="card-desc">A full review of your current BI stack — what's broken, what's slow, what to fix first.</p>
-      <div class="card-price">€200 <span>/ one-time</span></div>
+      <div class="card-price">€400 <span>/ one-time</span></div>
       <ul>
         <li>Architecture review</li>
         <li>Performance bottlenecks</li>
@@ -290,7 +309,7 @@
       <div class="card-icon">🏗️</div>
       <h3>BI Architecture</h3>
       <p class="card-desc">Full data architecture design: warehouse, pipelines, dashboards — ready to build.</p>
-      <div class="card-price">€450 <span>/ project</span></div>
+      <div class="card-price">€900 <span>/ project</span></div>
       <ul>
         <li>Data model design</li>
         <li>Tech stack selection</li>
@@ -304,7 +323,7 @@
       <div class="card-icon">🤖</div>
       <h3>AI + BI Integration</h3>
       <p class="card-desc">Add AI layer to your BI: natural language queries, anomaly detection, auto-reporting.</p>
-      <div class="card-price">€350 <span>/ project</span></div>
+      <div class="card-price">€600 <span>/ project</span></div>
       <ul>
         <li>NL-to-SQL setup</li>
         <li>Anomaly detection</li>
@@ -318,7 +337,7 @@
       <div class="card-icon">📈</div>
       <h3>BI Mentoring</h3>
       <p class="card-desc">Monthly sessions to level up your team's BI skills — architecture, SQL, best practices.</p>
-      <div class="card-price">€600 <span>/ month</span></div>
+      <div class="card-price">€800 <span>/ month</span></div>
       <ul>
         <li>4 × 60min sessions</li>
         <li>Code reviews</li>
@@ -354,6 +373,41 @@
       <div class="step-num">4</div>
       <h4>Implement & grow</h4>
       <p>You build on the foundation. I'm available for follow-up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="case">
+  <h2>Case study</h2>
+  <p class="section-sub">How a 150-person fintech recovered trust in their data in 6 weeks.</p>
+
+  <div class="case-study">
+    <div>
+      <div class="case-header">
+        <h3>Fintech company, 150 employees</h3>
+        <p>Series B · €40M ARR · 4 analysts, Power BI + Snowflake</p>
+      </div>
+      <div class="case-col">
+        <h4>The problem</h4>
+        <p>The CEO stopped using BI dashboards — numbers differed from what Finance reported. Three departments used three different definitions of "conversion". Analysts spent 70% of time cleaning data, not analysing it. No one trusted the weekly report.</p>
+      </div>
+    </div>
+
+    <div class="case-col">
+      <h4>What we did</h4>
+      <p><strong>Week 1–2:</strong> BI Express Audit — mapped all data sources, found 4 metric conflicts, documented broken pipelines.</p>
+      <p style="margin-top:0.75rem"><strong>Week 3–5:</strong> Architecture Review — unified metric definitions (data contracts for 12 KPIs), redesigned the data layer in Snowflake, eliminated 3 manual Excel handoffs.</p>
+      <p style="margin-top:0.75rem"><strong>Week 6:</strong> Executive dashboard rebuilt. CEO back on BI within 2 weeks of go-live.</p>
+    </div>
+
+    <div class="case-col">
+      <h4>Results</h4>
+      <div class="case-result">−65%</div>
+      <div class="case-result-label">time analysts spend on data prep</div>
+      <div class="case-result" style="margin-top:1.25rem">1 source</div>
+      <div class="case-result-label">of truth for all KPIs (was 3)</div>
+      <div class="case-result" style="margin-top:1.25rem">6 weeks</div>
+      <div class="case-result-label">from broken BI to CEO-trusted dashboard</div>
     </div>
   </div>
 </section>
